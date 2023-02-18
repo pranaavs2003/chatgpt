@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .infoText{
+        @apply bg-slate-400/20 rounded-sm p-3 max-w-[300px] text-center text-white font-normal cursor-pointer
+    }
+
+    .chatItem{
+      @apply text-white flex rounded-md  p-2 space-x-3 items-center cursor-pointer text-sm justify-between bg-slate-500/50
+    }
+    .chatItem:hover{
+      @apply bg-slate-500/70 
+    }
+
+    @media only screen and (max-width: 768px) {
+        .infoText{
+            @apply w-96
+        }
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #343541; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #656565; 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
