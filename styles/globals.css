@@ -8,7 +8,7 @@
     }
 
     .chatItem{
-      @apply text-white flex rounded-md  p-2 space-x-3 items-center cursor-pointer text-sm justify-between bg-slate-500/50
+      @apply text-white flex rounded-md  p-2 space-x-3 items-center cursor-pointer text-sm justify-between
     }
     .chatItem:hover{
       @apply bg-slate-500/70 

@@ -33,7 +33,7 @@ export default function ChatItem({id} : Props) {
     };
 
     return (
-    <Link className={isActivated ? "chatItem bg-slate-400" : "chatItem"} href={`/chats/${id}`} >
+    <Link className={isActivated ? "chatItem bg-[#343541]" : "chatItem"} href={`/chats/${id}`} >
         <ChatBubbleBottomCenterIcon className="w-4" />
         <div className="truncate" > { messages?.docs[messages?.docs.length - 1]?.data().text || "New Chat" } </div>
         <TrashIcon className="w-4 text-gray-400 hover:text-red-500 " onClick={() => deleteChat()} />
