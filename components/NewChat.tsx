@@ -21,7 +21,7 @@ export default function NewChat() {
     };
 
   return (
-    <div className="text-white flex border-[1px] border-white rounded-md  p-2 mb-5 space-x-3 items-center cursor-pointer hover:bg-slate-600/20" onClick={() => createNewChat()} >
+    <div className="text-white flex border-[1px] border-white rounded-md md:flex w-72 md:w-full p-2 mb-8 md:mb-5 mt-8 md:mt-0 space-x-3 items-center cursor-pointer hover:bg-slate-600/20" onClick={() => createNewChat()} >
         <PlusIcon className="w-4" />
         <div className="text-sm" >New Chat</div>
     </div>

@@ -64,7 +64,7 @@ export default function ChatBox( {chatId} : Props ) {
   };
 
   return (
-    <div className="w-5/6 bg-[#40414F] p-3 rounded-md">
+    <div className="bg-[#40414F] p-3 rounded-md mt-5 w-11/12 md:w-9/12">
       <form
         onSubmit={(e) => sendMessage(e)}
         className="flex items-center justify-between"

@@ -1,6 +1,7 @@
 import { SunIcon } from '@heroicons/react/24/outline';
 import { BoltIcon } from '@heroicons/react/24/outline';
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
+import NewChat from '../components/NewChat';
 import Topbar from "../components/Topbar";
 
 export default function Homepage() {
@@ -45,6 +46,9 @@ export default function Homepage() {
                     <div className="infoText">"Limited knowledge of world and events after 2021" </div>
                 </div>
             </div>
+        </div>
+        <div className="md:hidden" >
+            <NewChat />
         </div>
     </div>
   );
