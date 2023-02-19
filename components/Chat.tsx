@@ -20,7 +20,7 @@ export default function Chat( {chatId} : Props) {
       {
         (messages?.docs[0])
         ?
-        messages?.docs?.map((item) => <MessageItem message={item?.data()} key={item?.data()?.text} /> )
+        messages?.docs?.map((item) => <MessageItem message={item.data()} key={item?.data()?.text} /> )
         :
         <NoChats />
       }

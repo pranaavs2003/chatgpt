@@ -1,7 +1,8 @@
 import admin from "firebase-admin";
+import { DocumentData } from "firebase/firestore";
 
 interface MessageProp {
-    message: Message
+    message: DocumentData
 };
 
 export default function MessageItem({message} : MessageProp) {
